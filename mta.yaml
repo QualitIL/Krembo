@@ -1,0 +1,14 @@
+ID: Krembo
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: Test
+   type: java
+   path: Test
+   parameters:
+      memory: 512M
+   provides:
+    - name: Test_api
+      properties:
+         url: ${default-url}
